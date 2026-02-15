@@ -31,7 +31,7 @@ const App = () => {
 			{
 				isStart
 					?
-					<>
+					<Box className="container">
 						<audio ref={audioRef} src="song/song.mp3" autoPlay loop />
 						<Dialog open={isOpenModal} onClose={handleCloseModal} fullWidth maxWidth="md">
 							<DialogContent>
@@ -57,7 +57,7 @@ const App = () => {
 						<div className="text">
 							<Typography fontFamily="Lucy" variant="h1">Para ti, amor</Typography>
 						</div>
-					</>
+					</Box>
 					:
 					<Box
 						display="flex"
@@ -66,7 +66,6 @@ const App = () => {
 						height="100vh"
 						onClick={playAudio}
 						sx={{
-							padding: { xs: '1rem', sm: '2rem' },
 							cursor: 'pointer'
 						}}>
 						<Typography fontFamily="Lucy" variant="h2" align="center" sx={{ color: '#fca5a8' }}>¡Da click 👉👈!</Typography>

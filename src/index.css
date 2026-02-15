@@ -16,11 +16,20 @@ body {
 	background: #fee5f0;
 	min-height: 100vh;
 	line-height: 1.6;
-	padding: 1rem;
+	padding: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+}
+
+body:has(.container) {
+	padding: 1rem;
+}
+
+#root {
+	height: 100%;
+	width: 100%;
 }
 
 .box {
